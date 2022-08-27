@@ -6,6 +6,6 @@ get '/categories' do
 end
 
 post '/categories' do
-    format_as_json(Category.create(category_params))
+    Category.create(category_params).to_json
 end
 end
