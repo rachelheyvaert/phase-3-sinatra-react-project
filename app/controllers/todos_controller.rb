@@ -23,6 +23,5 @@ end
 delete "/todos/:id" do
     todo = Todo.find(params[:id])
     todo.destroy
-    todo.to_json
 end
 end
