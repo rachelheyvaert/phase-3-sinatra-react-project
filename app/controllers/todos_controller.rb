@@ -11,12 +11,7 @@ class TodosController < ApplicationController
     end
 
     post "/todos" do
-        todo = Todo.create(
-            name: params[:name],
-            details: params[:details],
-            category_id: params[:category_id],
-            timestamps: params[:timestamps]
-        )
+        todo = Todo.create(params)
         todo.to_json
     end
 
