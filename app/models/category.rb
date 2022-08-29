@@ -1,4 +1,10 @@
 class Category < ActiveRecord::Base
-has_many :todos
-#CREATE & READ NEEDED
+    has_many :todos
+
 end
+
+
+
+#CREATE & READ NEEDED
+
+
