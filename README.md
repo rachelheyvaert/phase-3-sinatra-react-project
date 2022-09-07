@@ -6,12 +6,12 @@ This is the backend for a to do list planning app created for Flatiron to showca
 * sqlite3 3.37.0
 
 ### How to use
-fork and clone
-bundle install
-run  rake db:migrate 
-run rake db:seed
-run rake server
-If you haven't already follow directions from frontend
+* fork and clone
+* bundle install
+* run  rake db:migrate 
+* run rake db:seed
+* run rake server
+* If you haven't already, follow directions from the [fontend](https://github.com/rachelheyvaert/phase-3-build-3-frontend)
 
 ### Licensing
 Copyright (c) 2022 Rachel Heyvaert
