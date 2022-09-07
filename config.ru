@@ -12,7 +12,6 @@ end
 use Rack::JSONBodyParser
 
 # Our application
-
 use TodosController  #recognizes routes
 use CategoriesController
 run ApplicationController

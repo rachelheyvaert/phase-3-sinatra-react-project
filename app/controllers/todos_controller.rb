@@ -1,10 +1,10 @@
 class TodosController < ApplicationController
 # GET
     get "/todos" do
-        todos = Todo.all
+        todos = Todo.all.order(:name)
         todos.to_json
     end 
-
+#Find specific todo
     get "/todos/:id" do
         todo = Todo.find(params[:id])
         todo.to_json
