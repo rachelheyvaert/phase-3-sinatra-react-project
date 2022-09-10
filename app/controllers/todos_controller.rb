@@ -12,15 +12,18 @@ class TodosController < ApplicationController
     end
 
     patch "/todos/:id" do
-        todo = Todo.find(params[:id])
+        todo = Todo.find_by(params[:id])
         todo.update(
-            completed: params[:completed]
+            name: params[:name],
+            detaisl: params[:details],
+            category_id: params[:category_id],
+            completed: params[false]
         )
         todo.to_json
     end
 
     delete "/todos/:id" do
-        todo = Todo.find(params[:id])
+        todo = Todo.find_by(params[:id])
         todo.destroy
         todo.to_json
     end
