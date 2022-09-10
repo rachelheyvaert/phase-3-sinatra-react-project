@@ -2,7 +2,8 @@ class CategoriesController < ApplicationController
 #show
     get '/categories' do
         categories = Category.all
-        categories.to_json
+        categories.to_json(include: :todos)
+
     end
 #create
     post '/categories' do
@@ -11,3 +12,4 @@ class CategoriesController < ApplicationController
     end
 
 end
+
