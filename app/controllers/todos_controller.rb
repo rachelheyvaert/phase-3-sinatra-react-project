@@ -15,7 +15,7 @@ class TodosController < ApplicationController
         todo = Todo.find_by(params[:id])
         todo.update(
             name: params[:name],
-            detaisl: params[:details],
+            details: params[:details],
             category_id: params[:category_id],
             completed: params[false]
         )
